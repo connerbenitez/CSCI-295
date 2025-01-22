@@ -1,0 +1,18 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin: 100;
+    padding: 100;
+    border: 10px solid black;
+
+}
+.container{
+    text-align: center;
+}
+.list{
+    display: inline-block;
+    text-align: left;
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto;
+}

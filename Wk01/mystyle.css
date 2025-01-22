@@ -1,0 +1,30 @@
+body {
+    background-color: burlywood;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    color: blue;
+}
+
+h1 {
+    background-color: aquamarine;
+    color: brown
+}
+
+h3 {
+    border: 2px solid;
+    border-color: blueviolet;
+    padding: 15px;
+    border: 3px solid green;
+    margin: 50px;
+    text-align: center;
+}
+
+.demoheading {
+    color: red;
+}
+
+#firsth3 {
+    color: blue;
+}
