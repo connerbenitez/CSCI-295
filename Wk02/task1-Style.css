@@ -7,12 +7,3 @@ body{
     border: 10px solid black;
 
 }
-.container{
-    text-align: center;
-}
-.list{
-    display: inline-block;
-    text-align: left;
-    width: 50%; /* Adjust the width as needed */
-    margin: 0 auto;
-}
