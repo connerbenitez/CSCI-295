@@ -6,12 +6,14 @@ table{
     color: #333333;
     border-spacing: none;
     text-align: center;
+    border: none;
 }
 th{
     color: #ffffff;
     Background-color: #90b4d6;
     text-align : center;
     letter-spacing : 2px
+   
 
 }
 td{
@@ -20,6 +22,7 @@ td{
     margin: 0px;
     text-align: left;
     width: 150px;
+    border: none;
 }
 .Green{
     background-color: #84b3ad;
