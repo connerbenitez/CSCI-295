@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    font-family: "Times New Roman";
+    overflow-x: hidden;
+
+
+}
+
+.Speakers {
+    padding: 20px;
+    float: left;
+    max-width: 33%;
+
+}
+
+.Schedule {
+    float: left;
+    max-width: 33%;
+    padding: 20px;
+}
+
+.Venue {
+    float: left;
+    max-width: 33%;
+    padding: 20px;
+}
+
+img {
+    height: 300px;
+    width: 100%;
+}
+
+.Speakers h3,
+.Schedule h3,
+.Venue h3 {
+    color: #b5e9cd;
+    font-size: 24px;
+
+}
+
+.Speakers h2,
+.Schedule h2,
+.Venue h2 {
+    color: #b5e9cd;
+    font-size: 30px;
+
+}
+
+.Speakers p,
+.Schedule p,
+.Venue p {
+    color: rgb(69, 68, 68);
+    font-size: 18px;
+
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    width: 90%;
+    padding-top: 0px;
+}
+footer, nav {
+    background-color: #233d5b;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+footer ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+
+footer ul li {
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    color: white;
+    
+}

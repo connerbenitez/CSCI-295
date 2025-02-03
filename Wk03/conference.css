@@ -1,0 +1,76 @@
+body {
+    background-color: #233d5b;
+    font-family: "Times New Roman";
+    
+
+}
+.Home ul{
+    
+    text-align: left;
+    padding: 0%;
+    margin: 0;
+    list-style: none;
+    
+}
+.Home ul li{
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+}
+.Home ul li a{
+    text-decoration: none;
+    color: #b5e9cd;
+}
+#Date{
+    text-align: right;
+    color: #b5e9cd;
+    padding-right: 20px;
+}
+.Home h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+    color:white;
+    padding-top: 70px
+}
+.Home h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color:#b5e9cd;
+    padding-top: 30px
+}
+#Description{
+    text-align: center;
+    color: rgb(153, 140, 140);
+    
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.Button button{
+    
+   border: 1px solid white; 
+   background-color: #233d5b;
+   color: white;
+   padding: 15px 25px;
+   font-size: 20px;
+   border-radius: 12px;
+
+}
+.Button a{
+    color: White;
+    text-decoration : none;
+}
+.Button button:hover {
+    background-color: white;
+    color: black;
+}
+
+.Button button:hover a {
+    color: black;
+}

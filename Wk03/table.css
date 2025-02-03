@@ -8,11 +8,13 @@ table{
     text-align: center;
     border: none;
 }
-th{
+table tr th{
     color: #ffffff;
     Background-color: #90b4d6;
     text-align : center;
-    letter-spacing : 2px
+    letter-spacing : 2px;
+    padding : 5px 30px 5px 10px;
+    
    
 
 }
