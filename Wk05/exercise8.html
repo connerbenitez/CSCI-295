@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+
+        <div id="Answer">
+            <p>0</p>
+        </div>
+        <div class='Buttons'>
+            <button class='btnTop' onclick="Clear()">AC</button>
+            <button class='btnTop'>/</button>
+            <button class='btnTop' onclick="AddOperator('%')">%</button>
+            <button class='btnOperators' onclick="AddOperator('/')">/</button>
+            <br>
+            <button class='btn' onclick="AddNumber(7)">7</button>
+            <button class='btn' onclick="AddNumber(8)">8</button>
+            <button class='btn' onclick="AddNumber(9)">9</button>
+            <button class='btnOperators' onclick="AddOperator('x')">x</button>
+            <br>
+            <button class='btn' onclick="AddNumber(4)">4</button>
+            <button class='btn' onclick="AddNumber(5)">5</button>
+            <button class='btn' onclick="AddNumber(6)">6</button>
+            <button class='btnOperators' onclick="AddOperator('-')">-</button>
+            <br>
+            <button class='btn' onclick="AddNumber(1)">1</button>
+            <button class='btn' onclick="AddNumber(2)">2</button>
+            <button class='btn' onclick="AddNumber(3)">3</button>
+            <button class='btnOperators' onclick="AddOperator('+')">+</button>
+            <br>
+            <button class='btn' onclick="Clear()">~
+            </button>
+            <button class='btn' onclick="AddNumber(0)">0</button>
+            <button class='btn' onclick="AddDecimal('.')">.</button>
+            <button class='btnOperators' onclick="Calculate()">=</button>
+        </div>
+    </div>
+</body>
+<script>
+    let currentInput = "0";
+    let previousInput = "";
+    let operator = "";
+    
+    function UpdateDisplay() {
+        document.getElementById("Answer").innerText = currentInput;
+    }
+// function adds number to current input and updates display
+    function AddNumber(num){
+        if(currentInput === "0"){
+            currentInput = num.toString();
+        } else {
+            currentInput += num.toString();
+        }
+        UpdateDisplay();
+
+
+    }
+    // function checks if their is a decimal in the current input and if not adds one if user prompts
+    function AddDecimal(){
+        if(!currentInput.includes(".")){
+            currentInput += ".";
+        }
+        UpdateDisplay();
+    }
+    // function adds operator to current input and updates display
+    // performs logic to allow for multiple operators to be used in a single calculation
+    function AddOperator(op){
+        if(operator !== ""){
+            Calculate();
+            previousInput = currentInput;
+            currentInput = "0";
+        } else {
+            previousInput = currentInput;
+            currentInput = "0";
+        }
+        operator = op;
+    }
+    // function calculates the result of the current input and previous input
+    function Calculate(){
+        let result = 0;
+        switch(operator){
+            case "+":
+                result = parseFloat(previousInput) + parseFloat(currentInput);
+                break;
+            case "-":
+                result = parseFloat(previousInput) - parseFloat(currentInput);
+                break;
+            case "x":
+                result = parseFloat(previousInput) * parseFloat(currentInput);
+                break;
+            case "/":
+                result = parseFloat(previousInput) / parseFloat(currentInput);
+                break;
+            case "%":
+                result = parseFloat(previousInput) % parseFloat(currentInput);
+                break;
+        }
+        currentInput = result.toString();
+        operator = "";
+        UpdateDisplay();
+    }
+    // function clears the current input and previous input
+    function Clear(){
+        currentInput = "0";
+        previousInput = "";
+        operator = "";
+        UpdateDisplay();
+    }
+   
+
+</script>
+
+</html>

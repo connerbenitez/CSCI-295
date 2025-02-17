@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="Image1" src="./images/monkey.png" alt="Monkey" width="200" height="200">
+    <button id="ChangeImage" onclick="myFunction()">Change Image</button>
+</body>
+<script>
+    function myFunction() {
+        let image1 = "./images/monkey.png";
+        let image2 = "./images/banana.png";
+        let imgElement = document.getElementById("Image1");
+        if (imgElement.src.includes("monkey.png")) {
+            imgElement.src = image2;
+        } else {
+            imgElement.src = image1;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,55 @@
+.btn{
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    height: 75px;
+    width: 75px;
+    margin: 1px;
+    background-color: rgb(51, 49, 49) ;
+    color: white;
+    border: black solid 1px;
+}
+.btnOperators{
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    height: 75px;
+    width: 75px;
+    margin: 1px;
+    border: black solid 1px;
+}
+
+.btnTop{
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    height: 75px;
+    width: 75px;
+    margin: 1px;
+    background-color: rgb(101, 95, 95);
+    color: white;
+    border: black solid 1px;
+
+}
+#Answer{
+    color: white;
+    text-align: right;
+    font-size: 2em;  /* Ensure consistent font size */
+    font-weight: bold;  /* Set consistent font weight */
+    white-space: nowrap; 
+}
+.calculator{
+    margin: auto;
+    background-color: black;
+    width: 320px;
+    padding: 10px;
+    border-radius: 14px;
+}
+#Answer p{
+    font-size: 50px;
+}
+body {
+    overflow-x: hidden; 
+  }
