@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+    <form onsubmit="return AddElement()">
+        <label for="element">Add an Element to the List:</label>
+        <input type="text" id="element" name="element" placeholder="element">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    function AddElement() {
+        var elementValue = document.getElementById("element").value;
+        if (elementValue) {
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(elementValue));
+            document.getElementById("list").appendChild(li);
+            document.getElementById("element").value = "";
+        }
+        return false; 
+    }
+</script>
+</html>
