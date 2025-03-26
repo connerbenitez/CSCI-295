@@ -1,0 +1,13 @@
+.Contacts{
+  border: 5px solid black;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px auto;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body{
+  background-color: bisque;
+}

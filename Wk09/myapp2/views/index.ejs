@@ -1,0 +1,26 @@
+<%- include('layout'); %>
+
+<body>
+  
+  <!-- <h1>Today's date: <%= currentDate %></h1> -->
+    
+  <div class="container">
+    <%- include('navbar', { page: 'home' }); %> 
+  
+    <div class="container">
+      <% data.forEach(function(user) { %>
+        <div class="Contacts"> 
+          <h3>
+            <%= user.firstname %> <%= user.lastname %>
+            <a href="/delete/<%= user.firstname %>">Delete Contact</a>
+          </h3>
+          <p>Email: <%= user.email %></p>
+          <p>Phone: <%= user.phone %></p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+  
+</body>
+
+</html>
