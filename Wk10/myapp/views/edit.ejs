@@ -17,7 +17,7 @@
     <textarea id="body" name="body" rows="5" cols="30"><%= note.body %></textarea><br><br>
 
     <label for="color">Color:</label>
-    <input type="text" id="color" name="color" value="<%= note.color %>"><br><br>
+    <input type="color" id="color" name="color" value="<%= note.color %>"><br><br>
 
     <label for="starred">Starred:</label>
     <input type="checkbox" id="starred" name="starred" value="true" <%= note.starred ? 'checked' : '' %>><br><br>
